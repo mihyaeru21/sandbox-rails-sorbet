@@ -140,6 +140,7 @@ GEM
     parser (3.3.0.5)
       ast (~> 2.4.1)
       racc
+    prettier_print (1.2.1)
     prism (0.24.0)
     psych (5.1.2)
       stringio
@@ -234,6 +235,8 @@ GEM
     sqlite3 (1.7.3-x86_64-darwin)
     sqlite3 (1.7.3-x86_64-linux)
     stringio (3.1.0)
+    syntax_tree (6.2.0)
+      prettier_print (>= 1.2.0)
     tapioca (0.13.1)
       bundler (>= 2.2.25)
       netrc (>= 0.11.0)
@@ -276,6 +279,7 @@ DEPENDENCIES
   sorbet
   sorbet-runtime
   sqlite3 (~> 1.4)
+  syntax_tree
   tapioca
   tzinfo-data
 

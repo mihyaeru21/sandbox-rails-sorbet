@@ -3,9 +3,7 @@
 require 'test_helper'
 
 class GroupsControllerTest < ActionDispatch::IntegrationTest
-  setup do
-    @group = groups(:one)
-  end
+  setup { @group = groups(:one) }
 
   test 'should get index' do
     get groups_url, as: :json
@@ -13,9 +11,7 @@ class GroupsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should create group' do
-    assert_difference('Group.count') do
-      post groups_url, params: { group: { name: @group.name } }, as: :json
-    end
+    assert_difference('Group.count') { post groups_url, params: { group: { name: @group.name } }, as: :json }
 
     assert_response :created
   end
@@ -31,9 +27,7 @@ class GroupsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should destroy group' do
-    assert_difference('Group.count', -1) do
-      delete group_url(@group), as: :json
-    end
+    assert_difference('Group.count', -1) { delete group_url(@group), as: :json }
 
     assert_response :no_content
   end

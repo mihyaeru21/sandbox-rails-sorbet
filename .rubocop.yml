@@ -9,11 +9,17 @@
 #
 # See https://docs.rubocop.org/rubocop/configuration
 
+inherit_gem:
+  syntax_tree: config/rubocop.yml
+
 require:
   - rubocop-rails
 
 AllCops:
   NewCops: enable
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
 
 Style/Documentation:
   Enabled: false
