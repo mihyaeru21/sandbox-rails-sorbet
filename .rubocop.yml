@@ -17,9 +17,12 @@ require:
 
 AllCops:
   NewCops: enable
-
-Style/StringLiterals:
-  EnforcedStyle: single_quotes
+  Exclude:
+    - db/schema.rb
+    - bin/*
 
 Style/Documentation:
   Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
