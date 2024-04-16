@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+# typed: true
 
 class GroupsController < ApplicationController
   before_action :set_group, only: %i[show update destroy]
