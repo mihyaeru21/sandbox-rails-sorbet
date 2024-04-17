@@ -18,8 +18,5 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   gem 'syntax_tree', require: false
   gem 'tapioca', require: false
-end
-
-group :development do
   gem 'sorbet'
 end
