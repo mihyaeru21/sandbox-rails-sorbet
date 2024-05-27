@@ -17,7 +17,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri windows]
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
+  gem 'sorbet'
   gem 'syntax_tree', require: false
   gem 'tapioca', require: false
-  gem 'sorbet'
 end
